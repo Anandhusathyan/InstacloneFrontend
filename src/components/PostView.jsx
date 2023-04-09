@@ -12,7 +12,7 @@ const PostView = () => {
 
     useEffect( () => {
         async function getData() {
-            await axios.get('http://localhost:8080/PostView')
+            await axios.get('https://backend-b9nz.onrender.com/PostView')
             .then(res =>{
                 updateState(res.data)
             } )

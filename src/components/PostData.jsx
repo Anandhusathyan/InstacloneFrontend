@@ -27,7 +27,7 @@ const PostData = () => {
                     data.append("author1",author)
                     data.append("location1",location)
                     data.append("description1",description)
-                axios.post('http://localhost:8080/PostData',data)
+                axios.post('https://backend-b9nz.onrender.com/PostData',data)
                 .then(res =>{
                     console.log(res)
                     navigate('/PostView')
